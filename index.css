@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+    --bg-color:#FCF6FC;
+    --primary-pink: #b93857;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);  
+    font-family: "Open Sans", sans-serif;  
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Lato", sans-serif;
+}
+p.bold {font-weight: bold;
+    font-family: "Open Sans", sans-serif;  
+}
+
+p.light {font-weight: lighter;
+
+}
+
+h5{ font-size: 1.2rem;
+
+
+}
+.wrapper {
+    background-color: white;
+    margin: 0 auto;
+    max-width: 1000px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.058);
+    button {
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;  
+    }
+}
+header {
+    width:100%;
+    
+
+     .header-grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        .left-image-svg{
+            background-image: url('https://images.unsplash.com/photo-1615671524701-9c3dde8fdaa0?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .right-image-svg {
+            .right-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 2rem 0;
+
+            }
+            .right-top { 
+                background-color: #9e6d52;
+                align-items: center;
+    
+
+            }
+            .right-bottom {
+                background-color: #0A846E;
+                align-items: center;
+            }
+
+        }
+     }
+}
+
+main {
+    padding: 0 1 rem;
+
+   
+}
+.plantcards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+ 
+    .plantcard {
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.058);
+        &:hover {
+            box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.058);
+            transition:all 0.3s;
+            }
+        }
+        .plantcard-image {
+                background-position:center ;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                padding: 2rem 0;
+           
+            &.plant-1 {
+                background-image: url(https://images.unsplash.com/photo-1518568403628-df55701ade9e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+               
+            }
+            &.plant-2{
+                background-image: url(https://images.unsplash.com/photo-1596199050105-6d5d32222916?q=80&w=2639&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            }   
+
+            &.plant-3 {
+                background-image: url(https://images.unsplash.com/photo-1565698228480-eec300c9679b?q=80&w=2806&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            }  
+            &.plant-4 {
+                background-image: url(https://images.unsplash.com/photo-1687878269804-63e8b50e3ddc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+               
+            }
+            &.plant-5 {
+                background-image: url(https://images.unsplash.com/photo-1555447740-03e40562af94?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            }   
+            &.plant-6 {
+                    background-image: url(https://images.unsplash.com/photo-1627989230968-d0b8e2d1a398?q=80&w=2962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                    
+                }
+            } 
+
+                .plantcard-text {
+                    padding: 1rem;
+                    .first-row {margin-bottom: 1rem; 
+                    }
+                    .first-row, .second-row {
+                        display: flex;
+                        justify-content: space-between;
+                        button {background-color: var(--primary-pink);
+                            color: white;
+                            border:none;
+                            border-radius: 7px;
+                            padding: 0.4rem 0.7rem;
+                            cursor: pointer;
+                            &:hover {
+                                background-color: #881b34;
+                            }
+                        }
+                    }
+               
+                }   
+           
+    }
+}
