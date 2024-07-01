@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,52 +9,70 @@
 </head>
 <body>
    <div class= "wrapper">
-<header>
-        <a > <img src="./assets/menu.svg" alt="menu"></a>
-        <section class="header-grid">
-            <figure class="left-image-svg">
-                <img src="./assets/Logo.svg" alt="planthood logo">
-            </figure>
-            
+    <header>
+      
+      <section class="header-grid">
+        <figure class="left-image-svg">
+          <img src="./assets/Logo.svg" alt="logo icon" />
+        </figure>
 
-            <section class="right-image-svg">
-                <figure class="right-item right-top">
-                    <img src="./assets/seedling.svg" alt="seedling icon fig">
-                </figure>
+        <figure class="right-top-image-svg">
+          <img src="./assets/seedling.svg" alt="seedling icon" />
+        </figure>
 
-                <figure class="right-item right-bottom">
-                    <img src="./assets/dig.svg" alt="shovel icon">
-                </figure>
+        <figure class="right-bottom-image-svg">
+          <img src="./assets/dig.svg" alt="dig icon" />
+        </figure>
+      </section>
 
-            </section>
+      
+      <nav>
+        <section class="navbar">
+          <a>PLANER</a>
+          <a>HISTORIK</a>
+          <a>TIPS</a>
+          <a>LOGGA IN</a>
         </section>
+
+        
+        <section class="navbar-mobile">
+          <img src="./assets/menu.svg" alt="menu icon" />
+        </section>
+      </nav>
     </header>
+
+
     <main>
 
-        <h1>PLANNED PLANTHOOD</h1>
-        <section class="info" id="season">
-          <article>
-            <h2>Säsong att så</h2>
+         
+         <h1>PLANNED PLANTHOOD</h1>
+
+         <section class="season-tips-container">
+          <section class="img-container">
+            <figure class="circle">
+              <img src="./assets/Vectorseedpackage.svg" alt="">
+            </figure>
+          </section>
+          <section class="text-container">
+            <h4>Säsong att så</h4>
             <p>
-              Våren är äntligen här i kollektivet! Lorem ipsum dolor sit amet
-              consectetur. Sit venenatis arcu nunc consectetur neque. Vel amet
-              netus amet eu elit.
+              Våren är äntligen här i kollektivet! 
+              Lorem ipsum dolor sit amet consectetur. Sit venenatis arcu nunc consectetur neque. Vel amet netus amet eu elit.
             </p>
             <button>SÅ-TIPS</button>
-          </article>
-    
-          <figure class="circle">
-            <img src="assets/Vectorseedpackage.svg" alt="seedimage" />
-          </figure>
+          </section>
         </section>
-        <div id="line">-</div>
-    
-        <h2>Våra planerade planteringar:</h2>
+        
+
+        <section class="planned-plants-container">
+          <hr class="green-line"></hr>
+          <h4 class="planned-plants-title">Våra planerade planteringar:</h4>
+        
         <section class="plantcards-grid">
             <article class="plantcard">
-                <figure class="plantcard-image plant-1">
+                <section class="plantcard-image plant-1">
                     <img src="./assets/plant.svg" alt="">
-                </figure>
+                </section>
                 <section class="plantcard-text">
                 <div class="first-row">
                     <h5>Gurka</h5>
@@ -62,6 +81,7 @@
                 <div class="second-row">
                     <p class="light">Rico Coolio</p>
                     <button>TA BORT</button>
+                    <img src="./assets/trash.svg" alt="" class="remove">
                 </div>
             </section>
                 </article>
@@ -77,10 +97,12 @@
                     <div class="second-row">
                         <p class="light">Jocke</p>
                         <button>TA BORT</button>
+                        <img src="./assets/trash.svg" alt="" class="remove">
                     </div>
                 </section>
                     </article>
                     <article class="plantcard">
+                    
                         <figure class="plantcard-image plant-3">
                             <img src="./assets/plant.svg" alt="">
                         </figure>
@@ -92,6 +114,7 @@
                         <div class="second-row">
                             <p class="light">och P-Å </p>
                             <button>TA BORT</button>
+                            <img src="./assets/trash.svg" alt="" class="remove">
                         </div>
                     </section>
                         </article>
@@ -107,6 +130,7 @@
                             <div class="second-row">
                                 <p class="light">Frippe</p>
                                 <button>TA BORT</button>
+                                <img src="./assets/trash.svg" alt="" class="remove">
                             </div>
                         </section>
                             </article>
@@ -122,6 +146,7 @@
                                 <div class="second-row">
                                     <p class="light">Emma på 4an</p>
                                     <button>TA BORT</button>
+                                    <img src="./assets/trash.svg" alt="" class="remove">
                                 </div>
                             </section>
                                 </article>
@@ -137,13 +162,60 @@
                                     <div class="second-row">
                                         <p class="light">Perra J</p>
                                         <button>TA BORT</button>
+                                        <img src="./assets/trash.svg" alt="" class="remove">
                                     </div>
                                 </section>
-                                    </article>
-
+                                    </article>                             
         </section>
+        <button>Visa fler</button>
+        </section>
+
+
+
+
+
+        <section class="formerplants-container">
+          
+            <section class="text-container">
+              <h4>Våra tidigare odlingar</h4>
+              <p>
+                Våren är äntligen här i kollektivet! 
+                Lorem ipsum dolor sit amet consectetur. Sit venenatis arcu nunc consectetur neque. Vel amet netus amet eu elit.
+              </p>
+              <button>Planterade plantor</button>
+            </section>
+            <section class="img-container">
+              <figure class="circle">
+                <img src="./assets/plant.svg" alt="">
+              </figure>
+            </section>
+          </section>
+        </section>
+
+
+      </main>
         </main>
+        <footer class="footer">
+          <section class="footer-content">
+              <section class="contact-info">
+                  <h2>Vi hörs!</h2>
+                  <section class="telephone">
+                    <img src="./assets/telephone.svg" alt="">
+                    <p>0701-234567</p>
+                  </section>
+                  <section class="email">
+                    <p>mail@mail.se</p>
+                    <img src="./assets/envelope.svg" alt="">
+                  </section>
+              </section>
+              <section class="footer-logo">
+                  <img src="./assets/Logo.svg" alt="">
+              </section>
+          </section>
+          <a href="#top" class="scroll-to-top">Till toppen av sidan</a>
+        </footer>
      </div>       
 
     </body>
 </html>
+
